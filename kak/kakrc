@@ -1,0 +1,3 @@
+hook global ModuleLoaded x11 %{
+  set-option global termcmd 'wezterm cli split-pane --right -- sh -c'
+}
