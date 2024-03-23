@@ -1,3 +1,15 @@
+add-highlighter global/ number-lines -hlcursor -relative -separator " " -cursor-separator "|"
+add-highlighter global/ show-matching
+
+set-option global ui_options terminal_assistant=cat
+
+map global normal <c-v> ":comment-line<ret>"
+map global goto n "<esc>:bn<ret>" -docstring "next buffer"
+map global goto p "<esc>:bp<ret>" -docstring "previous  buffer"
+
+source "%val{config}/odin.kak"
+
+# Delete this if not using wezterm terminal
 hook global ModuleLoaded x11 %{
   set-option global termcmd 'wezterm cli split-pane --right -- sh -c'
 }

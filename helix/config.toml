@@ -1,0 +1,13 @@
+theme = "gruber_base16"
+[editor]
+line-number = "relative"
+bufferline = "multiple"
+color-modes = true
+
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 1
+
+[editor.statusline]
+left = ["mode", "spinner", "file-base-name"]
