@@ -1,11 +1,12 @@
 "ui.background" = { bg = "base00" }
 "ui.popup" = { bg = "base00" }
-"ui.selection" = { bg = "base0C" }
+"ui.selection" = { bg = "base02", fg = "base06" }
 "ui.gutter.selected" = { fg = "base0A" }
+"ui.menu.selected" = { bg = "base0F" }
 
 "diagnostic.error" = { underline = { color = "base09", style = "curl" } }
 
-"constant.numeric" = { fg = "base08" }
+"constant.numeric" = { fg = "base06" }
 
 "type" = { fg = "base0A" }
 "operator" = { fg = "base0A" }
@@ -16,7 +17,7 @@
 "constant" = { fg = "base0E" }
 "punctuation" = { fg = "base0E" }
 
-"comment" = { fg = "base0F" }
+"comment" = { fg = "base0C" }
 
 "diff.plus" = { fg = "base0B" }
 "diff.minus" = { fg = "base09" }
