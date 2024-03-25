@@ -14,4 +14,17 @@ config.window_padding = {
   bottom = 0,
 }
 
+config.keys = {
+    {
+    key = '|',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+  },
+  {
+    key = 'Enter',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+  },
+}
+
 return config
