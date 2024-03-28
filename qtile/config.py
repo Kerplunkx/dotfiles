@@ -36,10 +36,6 @@ def autostart():
     home = os.path.expanduser('~/.config/qtile/scripts/autostart.sh')
     subprocess.Popen([home])
 
-def increase_vol():
-    current_volume = widget.Volume.get_volume()
-    print(current_volume)
-
 mod = "mod4"
 terminal = "wezterm"
 
@@ -92,12 +88,6 @@ keys = [
     # Brightness
     Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%"), desc="Increase brightness"),
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-"), desc="Decrease brightness"),
-    # Key([], "XF86MonBrightnessUp",
-    # lazy.widget['backlight'].change_backlight(widget.backlight.ChangeDirection.UP)
-    # ),
-    # Key([], "XF86MonBrightnessDown",
-    #     lazy.widget['backlight'].change_backlight(widget.backlight.ChangeDirection.DOWN)
-    # )
     # Volume
     Key([], "XF86AudioLowerVolume", lazy.widget['volume'].decrease_vol()),
     Key([], "XF86AudioRaiseVolume", lazy.widget['volume'].increase_vol()),
@@ -183,7 +173,6 @@ screens = [
                 ),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
-                # widget.Backlight(),
                 widget.Volume(),
                 widget.Systray(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
