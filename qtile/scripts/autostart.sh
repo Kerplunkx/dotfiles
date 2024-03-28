@@ -1,3 +1,3 @@
 #!/bin/bash
-picom &
-volumeicon
+picom
+# volumeicon
