@@ -1,0 +1,8 @@
+/*
+!/qtile/
+qtile/__pycache__/
+!/wezterm/
+!/kak/
+!/helix/
+!/starship/
+!.gitignore
