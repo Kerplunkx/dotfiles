@@ -1,8 +1,8 @@
 theme = "gruber-darker"
 [editor]
 line-number = "relative"
-bufferline = "multiple"
 color-modes = true
+auto-pairs = false
 
 [editor.indent-guides]
 render = true
