@@ -2,6 +2,7 @@
 !/qtile/
 qtile/__pycache__/
 !/wezterm/
+!/kitty/
 !/kak/
 !/helix/
 !/starship/
