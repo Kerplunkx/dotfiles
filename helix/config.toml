@@ -1,4 +1,4 @@
-theme = "gruber-darker"
+theme = "zen"
 [editor]
 line-number = "relative"
 color-modes = true

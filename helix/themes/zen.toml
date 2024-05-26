@@ -1,0 +1,5 @@
+inherits = "zenburn"
+
+"ui.linenr" = {}
+"ui.linenr.selected" = { modifiers = ["bold", "italic"] }
+"ui.gutter" = {}
