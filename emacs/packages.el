@@ -16,3 +16,4 @@
 
 ;; Packages
 (straight-use-package 'zenburn-theme)
+(straight-use-package 'magit)

@@ -7,6 +7,5 @@ qtile/__pycache__/
 !/helix/
 !/starship/
 !/emacs/
-emacs/auto-save-list
-emacs/straight
+emacs/*/**
 !.gitignore
