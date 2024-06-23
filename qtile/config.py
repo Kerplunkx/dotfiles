@@ -37,7 +37,7 @@ def autostart():
     subprocess.Popen([home])
 
 mod = "mod4"
-terminal = "kitty"
+terminal = "wezterm"
 
 keys = [
     # A list of available commands that can be bound to keys can be found

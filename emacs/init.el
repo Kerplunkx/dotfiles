@@ -9,4 +9,7 @@
 (set-frame-font "Iosevka Nerd Font 13" nil t)
 
 (load "~/.config/emacs/packages.el")
+(load "~/.config/emacs/odin-mode.el")
 (load-theme 'zenburn t)
+
+(shell-command "source ~/.zshrc")
