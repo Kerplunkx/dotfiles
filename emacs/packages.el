@@ -18,6 +18,8 @@
 (straight-use-package 'zenburn-theme)
 (straight-use-package 'magit)
 (straight-use-package 'exec-path-from-shell)
+(straight-use-package 'company-mode)
+(straight-use-package 'rust-mode)
 
 ;; Configs
 (use-package exec-path-from-shell
@@ -25,3 +27,22 @@
   :config
   (when (memq window-system '(mac ns x))
     (exec-path-from-shell-initialize)))
+
+(use-package company
+  :ensure t
+  :config
+  (global-company-mode))
+
+;; Odin format on save
+
+(defun odin-format-on-save ()
+  "Format Odin files in the current directory with odinfmt -w and refresh buffer."
+  (when (string-equal major-mode "odin-mode")
+    (let ((current-file (buffer-file-name)))
+      ;; Run odinfmt -w on the current directory
+      (shell-command "odinfmt -w > /dev/null 2>&1")
+      ;; Revert the current buffer to show changes without exiting
+      (revert-buffer t t t))))
+
+(use-package odin-mode
+  :hook (after-save . odin-format-on-save))
